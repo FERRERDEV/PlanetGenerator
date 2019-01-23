@@ -17,24 +17,21 @@ public class PlanetEditor : Editor
                 _planet.Generate();
             }
         }
-
+        
+        DrawSettingsEditor(_planet.PlanetSettings, _planet.Generate, ref _planetEditor);
+        
         if (GUILayout.Button("Generate Planet"))
         {
             _planet.Generate();
         }
-        
-        DrawSettingsEditor(_planet.PlanetSettings, _planet.Generate, ref _planet.PlanetSettingsFoldout, ref _planetEditor);
     }
     
-    void DrawSettingsEditor(Object settings, System.Action onSettingsUpdated, ref bool foldout, ref Editor editor)
+    void DrawSettingsEditor(Object settings, System.Action onSettingsUpdated, ref Editor editor)
     {
         if (settings != null)
         {
-            foldout = EditorGUILayout.InspectorTitlebar(foldout, settings);
             using (var check = new EditorGUI.ChangeCheckScope())
             {
-                if (foldout)
-                {
                     CreateCachedEditor(settings, null, ref editor);
                     editor.OnInspectorGUI();
 
@@ -45,7 +42,6 @@ public class PlanetEditor : Editor
                             onSettingsUpdated();
                         }
                     }
-                }
             }
         }
     }
