@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b3497aaf9168e4090ae11937a17fc5, type: 3}
   m_Name: Planet
   m_EditorClassIdentifier: 
-  Resolution: 64
-  Radious: 1
+  Resolution: 56
+  Radious: 38
   NoiseSettings:
-    Strength: 0.83
-    Roughness: 0.17
+    Strength: 0.101
+    BaseRoughness: 1.22
+    Roughness: 2.84
+    Persistence: 0.643
+    Layers: 8
     Center: {x: 0, y: 0, z: 0}
+    MinHeight: 1.34

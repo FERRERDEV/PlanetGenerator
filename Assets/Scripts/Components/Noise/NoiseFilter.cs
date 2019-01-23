@@ -26,7 +26,7 @@ public class NoiseFilter
             amplitude *= _settings.Persistence;
         }
 
-        noiseValue = Mathf.Max(0, noiseValue - _settings.MinValue);
+        noiseValue = Mathf.Max(0, noiseValue - _settings.MinHeight);
         return noiseValue * _settings.Strength;
     }
 }

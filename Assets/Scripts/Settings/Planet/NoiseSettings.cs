@@ -19,5 +19,5 @@ public class NoiseSettings
     
     public Vector3 Center;
 
-    public float MinValue;
+    public float MinHeight;
 }
