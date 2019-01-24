@@ -11,9 +11,7 @@ public class NoiseSettingsDrawer : PropertyDrawer
     public override void OnGUI ( Rect position, SerializedProperty property, GUIContent label )
     {
 
-        EditorGUILayout.BeginHorizontal(CustomEditorStyles.Background);
-        GUILayout.Label("Noise settings", EditorStyles.boldLabel);
-        EditorGUILayout.EndHorizontal();
+        CustomEditorHelpers.DrawHeader("Noise settings");
         
         EditorGUI.BeginProperty(position, label, property);
  
@@ -44,6 +42,9 @@ public class NoiseSettingsDrawer : PropertyDrawer
             minHeightProperty.floatValue = minHeightValue;
         }
  
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        
         EditorGUI.EndProperty();
     }
 }
