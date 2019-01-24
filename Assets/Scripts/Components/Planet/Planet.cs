@@ -9,9 +9,6 @@ public class Planet : MonoBehaviour
     
     private Vector3[] _directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back };
 
-    [HideInInspector]
-    public bool PlanetSettingsFoldout;
-
 
     public void Generate()
     {
@@ -26,9 +23,15 @@ public class Planet : MonoBehaviour
         {
             if (_meshFilters[i] == null)
             {
-                GameObject meshObj = new GameObject("Region");
-                meshObj.transform.parent = transform;
+                GameObject meshObj;
 
+                if (this.transform.GetChild(i) != null)
+                    meshObj = transform.GetChild(i).gameObject;
+                else
+                    meshObj = new GameObject("Region");
+                
+                
+                meshObj.transform.parent = transform;
                 meshObj.AddComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Standard"));
                 _meshFilters[i] = meshObj.AddComponent<MeshFilter>();
                 _meshFilters[i].sharedMesh = new Mesh();
