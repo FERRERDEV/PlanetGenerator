@@ -15,4 +15,6 @@ public class PlanetSettings : ScriptableObject
 
     public NoiseSettings NoiseSettings;
 
+    public ColorSettings ColorSettings;
+
 }
