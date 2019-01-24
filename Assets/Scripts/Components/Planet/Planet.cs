@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Base class of the planet generator.
+/// </summary>
 public class Planet : MonoBehaviour
 {
     public PlanetSettings PlanetSettings;
@@ -10,6 +13,9 @@ public class Planet : MonoBehaviour
     private Vector3[] _directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back };
 
 
+    /// <summary>
+    /// Generate the planet with the given planet settings.
+    /// </summary>
     public void Generate()
     {
         if (_meshFilters == null || _meshFilters.Length == 0)
@@ -43,6 +49,9 @@ public class Planet : MonoBehaviour
         GenerateMesh();
     }
 
+    /// <summary>
+    /// Construct the mesh for each defined region.
+    /// </summary>
     void GenerateMesh()
     {
         foreach (Region region in _regions)

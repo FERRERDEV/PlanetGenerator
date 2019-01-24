@@ -17,9 +17,10 @@ public class PlanetEditor : Editor
             }
         }
 
-        EditorGUILayout.BeginHorizontal(CustomEditorStyles.Background);
+        EditorGUILayout.BeginHorizontal(CustomEditorStyles.Header);
         GUILayout.Label("Data asset", EditorStyles.boldLabel);
         EditorGUILayout.EndHorizontal();
+        EditorGUILayout.Space();
         
         EditorGUI.BeginChangeCheck();
         
@@ -27,6 +28,9 @@ public class PlanetEditor : Editor
        
         if(EditorGUI.EndChangeCheck())
             _planet.Generate();
+        
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
         
         DrawSettingsEditor(_planet.PlanetSettings, _planet.Generate, ref _planetEditor);
     }
@@ -37,16 +41,16 @@ public class PlanetEditor : Editor
         {
             using (var check = new EditorGUI.ChangeCheckScope())
             {
-                    CreateCachedEditor(settings, null, ref editor);
-                    editor.OnInspectorGUI();
+                CreateCachedEditor(settings, null, ref editor);
+                editor.OnInspectorGUI();
 
-                    if (check.changed)
+                if (check.changed)
+                {
+                    if (onSettingsUpdated != null)
                     {
-                        if (onSettingsUpdated != null)
-                        {
-                            onSettingsUpdated();
-                        }
+                        onSettingsUpdated();
                     }
+                }
             }
         }
     }

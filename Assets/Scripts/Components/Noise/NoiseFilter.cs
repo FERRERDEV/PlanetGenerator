@@ -2,16 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Base class of the noise to be applied on each region.
+/// </summary>
 public class NoiseFilter
 {
     private NoiseSettings _settings;
     private Noise _noise = new Noise();
 
+    /// <summary>
+    /// Noise filter constructor.
+    /// </summary>
+    /// <param name="settings">Noise settings reference.</param>
     public NoiseFilter(NoiseSettings settings)
     {
         _settings = settings;
     }
     
+    /// <summary>
+    /// Give the elevation value of a mesh point.
+    /// </summary>
+    /// <param name="point">Point on the mesh</param>
+    /// <returns>Elevation value</returns>
     public float Evaluate(Vector3 point)
     {
         float noiseValue = 0;

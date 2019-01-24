@@ -1,17 +1,28 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Base class to construct each planet region.
+/// </summary>
 public class Region
 {
     private Mesh _mesh;
     private int _resolution;
     private int _radious;
     
-    Vector3 _localUp;
+    private Vector3 _localUp;
     private Vector3 _axisA;
     private Vector3 _axisB;
 
     private NoiseFilter _noiseFilter;
 
+    /// <summary>
+    /// Region constructor.
+    /// </summary>
+    /// <param name="mesh">Mesh reference.</param>
+    /// <param name="resolution">Amount of vertices per side.</param>
+    /// <param name="radius">Distance from the center.</param>
+    /// <param name="localUp">Direction vector away from the center.</param>
+    /// <param name="noiseFilter">Noise filter to be applied.</param>
     public Region(Mesh mesh, int resolution, int radius, Vector3 localUp, NoiseFilter noiseFilter)
     {
         _mesh = mesh;
@@ -24,6 +35,9 @@ public class Region
         _axisB = Vector3.Cross(localUp, _axisA);
     }
     
+    /// <summary>
+    /// Build the mesh with the region params.
+    /// </summary>
     public void ConstructMesh()
     {
         Vector3[] vertices = new Vector3[_resolution * _resolution];
