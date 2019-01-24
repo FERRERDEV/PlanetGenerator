@@ -1,6 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
+/// <summary>
+/// Simplex Perlin noise from libnoise-dotnet.
+/// </summary>
 public class Noise
 {
     static readonly int[] Source = {
