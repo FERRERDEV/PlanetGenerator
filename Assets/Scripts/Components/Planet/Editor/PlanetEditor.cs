@@ -21,7 +21,12 @@ public class PlanetEditor : Editor
         GUILayout.Label("Data asset", EditorStyles.boldLabel);
         EditorGUILayout.EndHorizontal();
         
+        EditorGUI.BeginChangeCheck();
+        
         _planet.PlanetSettings = EditorGUILayout.ObjectField(_planet.PlanetSettings, typeof(PlanetSettings), false) as PlanetSettings;
+       
+        if(EditorGUI.EndChangeCheck())
+            _planet.Generate();
         
         DrawSettingsEditor(_planet.PlanetSettings, _planet.Generate, ref _planetEditor);
     }
@@ -49,6 +54,8 @@ public class PlanetEditor : Editor
     private void OnEnable()
     {
         _planet = (Planet)target;
+        
+        _planet.Generate();
     }
     
 }
