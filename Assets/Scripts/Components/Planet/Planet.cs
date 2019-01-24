@@ -34,7 +34,7 @@ public class Planet : MonoBehaviour
                 _meshFilters[i].sharedMesh = new Mesh();
             }
             
-            _regions[i] = new Region(_meshFilters[i].sharedMesh, PlanetSettings.Resolution, PlanetSettings.Radious, _directions[i], new NoiseFilter(PlanetSettings.NoiseSettings));
+            _regions[i] = new Region(_meshFilters[i].sharedMesh, PlanetSettings.Resolution, PlanetSettings.Radius, _directions[i], new NoiseFilter(PlanetSettings.NoiseSettings));
         }
         
         GenerateMesh();

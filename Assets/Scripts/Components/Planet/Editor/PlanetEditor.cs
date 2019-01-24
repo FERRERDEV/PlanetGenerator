@@ -11,19 +11,19 @@ public class PlanetEditor : Editor
     {
         using (var check = new EditorGUI.ChangeCheckScope())
         {
-            base.OnInspectorGUI();
             if (check.changed)
             {
                 _planet.Generate();
             }
         }
+
+        EditorGUILayout.BeginHorizontal(CustomEditorStyles.Background);
+        GUILayout.Label("Data asset", EditorStyles.boldLabel);
+        EditorGUILayout.EndHorizontal();
+        
+        _planet.PlanetSettings = EditorGUILayout.ObjectField(_planet.PlanetSettings, typeof(PlanetSettings), false) as PlanetSettings;
         
         DrawSettingsEditor(_planet.PlanetSettings, _planet.Generate, ref _planetEditor);
-        
-        if (GUILayout.Button("Generate Planet"))
-        {
-            _planet.Generate();
-        }
     }
     
     void DrawSettingsEditor(Object settings, System.Action onSettingsUpdated, ref Editor editor)

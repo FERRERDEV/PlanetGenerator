@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Planet
   m_EditorClassIdentifier: 
   Resolution: 56
-  Radious: 38
+  Radious: 20
   NoiseSettings:
-    Strength: 0.101
-    BaseRoughness: 1.22
-    Roughness: 2.84
-    Persistence: 0.643
+    Strength: 0.091
+    BaseRoughness: 1.47
+    Roughness: 1.4
+    Persistence: 0.801
     Layers: 8
     Center: {x: 0, y: 0, z: 0}
-    MinHeight: 1.34
+    MinHeight: 2.19
