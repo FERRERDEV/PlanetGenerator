@@ -31,15 +31,18 @@ public class Planet : MonoBehaviour
             {
                 GameObject meshObj;
 
-                if (this.transform.GetChild(i) != null)
+                if (transform.GetChild(i) != null)
                     meshObj = transform.GetChild(i).gameObject;
                 else
                     meshObj = new GameObject("Region");
                 
                 
                 meshObj.transform.parent = transform;
-                meshObj.AddComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Standard"));
-                _meshFilters[i] = meshObj.AddComponent<MeshFilter>();
+                
+                if(meshObj.GetComponent<MeshRenderer>() == null)
+                    meshObj.AddComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Standard"));
+                
+                _meshFilters[i] = meshObj.GetComponent<MeshFilter>() != null ? meshObj.GetComponent<MeshFilter>() : meshObj.AddComponent<MeshFilter>();
                 _meshFilters[i].sharedMesh = new Mesh();
             }
             
