@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b3497aaf9168e4090ae11937a17fc5, type: 3}
-  m_Name: Planet
+  m_Name: Mars
   m_EditorClassIdentifier: 
-  Resolution: 31
-  Radius: 15
+  Resolution: 56
+  Radius: 2
   NoiseSettings:
-    Strength: 0.443
-    BaseRoughness: 0.93
-    Roughness: 2.25
-    Persistence: 0.53
-    Layers: 4
+    Strength: 0.2
+    BaseRoughness: 2
+    Roughness: 2
+    Persistence: 0.5
+    Layers: 8
     Center: {x: 0, y: 0, z: 0}
-    MinHeight: 1.05
+    MinHeight: 1
   ColorSettings:
     Gradient:
       serializedVersion: 2
