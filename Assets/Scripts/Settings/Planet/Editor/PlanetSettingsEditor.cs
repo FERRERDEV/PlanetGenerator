@@ -20,6 +20,12 @@ public class PlanetSettingsEditor : Editor
         _planetSettings.Radius = (int)EditorGUILayout.Slider("Radius", _planetSettings.Radius, 2, 128);
         
         EditorGUILayout.PropertyField(planetSettings.FindProperty("NoiseSettings"));
+
+        CustomEditorHelpers.DrawHeader("Color settings");
+
+        _planetSettings.ColorSettings.Gradient =
+            EditorGUILayout.GradientField("Gradient", _planetSettings.ColorSettings.Gradient);
+        
         planetSettings.ApplyModifiedProperties();
     }
 

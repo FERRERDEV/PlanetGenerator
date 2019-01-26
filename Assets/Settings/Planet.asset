@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Planet
   m_EditorClassIdentifier: 
   Resolution: 31
-  Radius: 15
+  Radius: 2
   NoiseSettings:
-    Strength: 0.443
+    Strength: 0.401
     BaseRoughness: 0.93
     Roughness: 2.25
     Persistence: 0.53

@@ -7,10 +7,10 @@ public class Altitude
     public float MinAltitude;
     public float MaxAltitude;
 
-    public Altitude(float value)
+    public Altitude()
     {
-        MinAltitude = float.MinValue;
-        MaxAltitude = float.MaxValue;
+        MinAltitude = float.MaxValue;
+        MaxAltitude = float.MinValue;
     }
 
     /// <summary>

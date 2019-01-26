@@ -38,12 +38,13 @@ public class Region
     /// <summary>
     /// Build the mesh with the region params.
     /// </summary>
-    public void ConstructMesh()
+    public void ConstructMesh(out float elevation)
     {
         Vector3[] vertices = new Vector3[_resolution * _resolution];
         int[] triangles = new int[(_resolution - 1) * (_resolution - 1) * 6];
         int triIndex = 0;
-
+        float elevationA = 0;
+        
         for (int y = 0; y < _resolution; y++)
         {
             for (int x = 0; x < _resolution; x++)
@@ -52,7 +53,7 @@ public class Region
                 Vector2 percent = new Vector2(x, y) / (_resolution - 1);
                 Vector3 pointOnUnitCube = _localUp + (percent.x - .5f) * 2 * _axisA + (percent.y - .5f) * 2 * _axisB;
                 Vector3 pointOnUnitSphere = pointOnUnitCube.normalized;
-                vertices[i] = pointOnUnitSphere * _radious * (1+ _noiseFilter.Evaluate(pointOnUnitSphere));
+                vertices[i] = PointOnPlanet(pointOnUnitSphere, out elevationA);
 
                 if (x != _resolution - 1 && y != _resolution - 1)
                 {
@@ -67,10 +68,18 @@ public class Region
                 }
             }
         }
+
+        elevation = elevationA;
         
         _mesh.Clear();
         _mesh.vertices = vertices;
         _mesh.triangles = triangles;
         _mesh.RecalculateNormals();
+    }
+
+    private Vector3 PointOnPlanet(Vector3 pointOnUnitSphere, out float elevation)
+    {
+        elevation = _radious * (1 + _noiseFilter.Evaluate(pointOnUnitSphere));
+        return pointOnUnitSphere * elevation;
     }
 }

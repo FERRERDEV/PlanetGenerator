@@ -15,13 +15,13 @@ MonoBehaviour:
   Resolution: 56
   Radius: 2
   NoiseSettings:
-    Strength: 0.2
-    BaseRoughness: 2
-    Roughness: 2
-    Persistence: 0.5
+    Strength: 0.136
+    BaseRoughness: 0.86
+    Roughness: 2.09
+    Persistence: 0.484
     Layers: 8
     Center: {x: 0, y: 0, z: 0}
-    MinHeight: 1
+    MinHeight: 0.84
   ColorSettings:
     Gradient:
       serializedVersion: 2
