@@ -74,6 +74,7 @@ public class Planet : MonoBehaviour
         {
             child.GetComponent<MeshRenderer>().sharedMaterial.SetFloat("minHeight", _altitude.MinAltitude);
             child.GetComponent<MeshRenderer>().sharedMaterial.SetFloat("maxHeight", _altitude.MaxAltitude);
+            child.GetComponent<MeshRenderer>().sharedMaterial.SetTexture("_MainTex", TextureUtils.TextureFromGradient(PlanetSettings.ColorSettings.Gradient));
         }
     }
 
