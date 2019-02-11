@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Planet
   m_EditorClassIdentifier: 
   Resolution: 31
-  Radius: 2
+  Radius: 1
   NoiseSettings:
-    Strength: 0.401
-    BaseRoughness: 0.93
-    Roughness: 2.25
-    Persistence: 0.53
-    Layers: 4
+    Strength: 0.1
+    BaseRoughness: 1.52
+    Roughness: 1.17
+    Persistence: 0.958
+    Layers: 8
     Center: {x: 0, y: 0, z: 0}
-    MinHeight: 1.05
+    MinHeight: 2
   ColorSettings:
     Gradient:
       serializedVersion: 2

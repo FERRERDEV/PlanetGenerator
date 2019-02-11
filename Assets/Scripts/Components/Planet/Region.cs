@@ -38,12 +38,12 @@ public class Region
     /// <summary>
     /// Build the mesh with the region params.
     /// </summary>
-    public void ConstructMesh(out float elevation)
+    public void ConstructMesh(ref Altitude altitude)
     {
         Vector3[] vertices = new Vector3[_resolution * _resolution];
         int[] triangles = new int[(_resolution - 1) * (_resolution - 1) * 6];
         int triIndex = 0;
-        float elevationA = 0;
+        float elevation = 0;
         
         for (int y = 0; y < _resolution; y++)
         {
@@ -53,7 +53,8 @@ public class Region
                 Vector2 percent = new Vector2(x, y) / (_resolution - 1);
                 Vector3 pointOnUnitCube = _localUp + (percent.x - .5f) * 2 * _axisA + (percent.y - .5f) * 2 * _axisB;
                 Vector3 pointOnUnitSphere = pointOnUnitCube.normalized;
-                vertices[i] = PointOnPlanet(pointOnUnitSphere, out elevationA);
+                vertices[i] = PointOnPlanet(pointOnUnitSphere, out elevation);
+                altitude.Evaluate(elevation);
 
                 if (x != _resolution - 1 && y != _resolution - 1)
                 {
@@ -68,8 +69,6 @@ public class Region
                 }
             }
         }
-
-        elevation = elevationA;
         
         _mesh.Clear();
         _mesh.vertices = vertices;

@@ -14,6 +14,7 @@
               <e p="NoiseFilter.cs" t="Include" />
             </e>
             <e p="Planet" t="Include">
+              <e p="Altitude.cs" t="Include" />
               <e p="Editor" t="Include">
                 <e p="PlanetEditor.cs" t="Include" />
               </e>
@@ -23,10 +24,29 @@
           </e>
           <e p="Settings" t="Include">
             <e p="Planet" t="Include">
+              <e p="ColorSettings.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="NoiseSettingsDrawer.cs" t="Include" />
+                <e p="PlanetSettingsEditor.cs" t="Include" />
+              </e>
               <e p="NoiseSettings.cs" t="Include" />
               <e p="PlanetSettings.cs" t="Include" />
             </e>
           </e>
+          <e p="Utils" t="Include">
+            <e p="CustomEditor" t="Include">
+              <e p="CustomEditorHelpers.cs" t="Include" />
+              <e p="CustomEditorStyles.cs" t="Include" />
+              <e p="CustomEditorStyling.cs" t="Include" />
+            </e>
+            <e p="EditorRotator.cs" t="Include" />
+            <e p="TextureUtils" t="Include">
+              <e p="TextureUtils.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="ColorHeight.shader" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

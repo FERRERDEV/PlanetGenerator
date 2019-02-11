@@ -64,20 +64,28 @@ public class Planet : MonoBehaviour
         
         foreach (Region region in _regions)
         {
-            float elevation = 0;
-            
-            region.ConstructMesh(out elevation);
-            _altitude.Evaluate(elevation);
+            region.ConstructMesh(ref _altitude);
         }
 
         foreach (Transform child in transform)
         {
             child.GetComponent<MeshRenderer>().sharedMaterial.SetFloat("minHeight", _altitude.MinAltitude);
             child.GetComponent<MeshRenderer>().sharedMaterial.SetFloat("maxHeight", _altitude.MaxAltitude);
-            child.GetComponent<MeshRenderer>().sharedMaterial.SetTexture("_MainTex", TextureUtils.TextureFromGradient(PlanetSettings.ColorSettings.Gradient));
+            child.GetComponent<MeshRenderer>().sharedMaterial.SetTexture("_MainTex",
+                TextureUtils.TextureFromGradient(PlanetSettings.ColorSettings.Gradient, 128, 1));
+
+
         }
+        
+        Debug.Log("Min altitude " + _altitude.MinAltitude);
+        Debug.Log("Max altitude " + _altitude.MaxAltitude);
     }
 
+    float inverseLerp(float a, float b, float value)
+    {
+        return ((value-a)/(b-a));
+    }
+    
     void UpdateMeshHeight(Material material, float minHeight, float maxHeight)
     {
         material.SetFloat("minHeight", minHeight);

@@ -17,7 +17,7 @@ public class PlanetSettingsEditor : Editor
         CustomEditorHelpers.DrawHeader("Planet settings");
 
         _planetSettings.Resolution = (int)EditorGUILayout.Slider("Resolution", _planetSettings.Resolution, 2, 128);
-        _planetSettings.Radius = (int)EditorGUILayout.Slider("Radius", _planetSettings.Radius, 2, 128);
+        _planetSettings.Radius = (int)EditorGUILayout.Slider("Radius", _planetSettings.Radius, 1, 128);
         
         EditorGUILayout.PropertyField(planetSettings.FindProperty("NoiseSettings"));
 

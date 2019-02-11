@@ -3,6 +3,7 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _CenterPoint ("Center", Vector) = (0, 0, 0, 0)
     }
     SubShader
     {
@@ -18,16 +19,18 @@
 
         float minHeight;
         float maxHeight;
-
+        
+        sampler2D _MainTex;
+        float4 _CenterPoint;
+        
         struct Input
         {
             float3 worldPos;
-            float3 objPos;
         };
 
         float inverseLerp(float a, float b, float value)
         {
-            return saturate((value-a)/(b-a));
+            return float((value-a)/(b-a));
         }
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
@@ -39,10 +42,13 @@
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-            float distanceT = distance(IN.objPos, IN.worldPos);
-            float heightPercent = inverseLerp(minHeight, maxHeight, distanceT);
+            float distanceT = distance(_CenterPoint, IN.worldPos);
+            float heightPercent = inverseLerp(minHeight, maxHeight, abs(distanceT));
             
-            o.Albedo = heightPercent;
+            float2 pixelPos = float2(heightPercent, 1);
+            float4 color = tex2D(_MainTex, pixelPos);
+            
+            o.Albedo = color;
         }
         ENDCG
     }

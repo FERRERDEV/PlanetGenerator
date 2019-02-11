@@ -5,7 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlanetGenerator/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlanetGenerator/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlanetGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlanetGenerator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mars.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mars.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Planet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Planet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ColorHeight.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/ColorHeight.shader" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,46 +19,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="36" column="178" selection-start-line="36" selection-start-column="178" selection-end-line="36" selection-end-column="178" />
+            <state relative-caret-position="193">
+              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding>
-                <marker date="1548189066050" expanded="true" signature="55:1424" ph="{...}" />
-                <marker date="1548189066050" expanded="true" signature="396:1285" ph="{...}" />
-                <marker date="1548189066050" expanded="true" signature="464:530" ph="{...}" />
-                <marker date="1548189066050" expanded="true" signature="610:1246" ph="{...}" />
-                <marker date="1548189066050" expanded="true" signature="661:1043" ph="{...}" />
-                <marker date="1548189066050" expanded="true" signature="1310:1422" ph="{...}" />
-                <marker date="1548189066050" expanded="true" signature="1360:1416" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/PlanetSettings.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <marker date="1548188390689" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548188390689" expanded="true" signature="190:342" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/NoiseSettings.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <marker date="1548188374948" expanded="true" signature="6:32" ph="..." />
-                <marker date="1548188374948" expanded="true" signature="75:169" ph="{...}" />
+                <marker date="1548695123831" expanded="false" signature="6:32" ph="..." />
+                <marker date="1548695123831" expanded="true" signature="34:102" ph="/// Base class of the planet generator. ... " />
+                <marker date="1548695123831" expanded="true" signature="138:3004" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="428:520" ph="/// Generate the planet with the given planet settings. ... " />
+                <marker date="1548695123831" expanded="true" signature="547:1822" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="615:681" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="761:1783" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="812:1581" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="1828:1912" ph="/// Construct the mesh for each defined region. ... " />
+                <marker date="1548695123831" expanded="true" signature="1936:2704" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="2031:2100" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="2148:2569" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="2758:2804" ph="{...}" />
+                <marker date="1548695123831" expanded="true" signature="2888:3002" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,15 +48,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="250">
+              <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
               <folding>
-                <marker date="1548187714482" expanded="true" signature="39:2030" ph="{...}" />
-                <marker date="1548187714482" expanded="true" signature="342:622" ph="{...}" />
-                <marker date="1548187714482" expanded="true" signature="659:2028" ph="{...}" />
-                <marker date="1548187714482" expanded="true" signature="885:1882" ph="{...}" />
-                <marker date="1548187714482" expanded="true" signature="945:1872" ph="{...}" />
-                <marker date="1548187714482" expanded="true" signature="1442:1858" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="20:96" ph="/// Base class to construct each planet region. ... " />
+                <marker date="1548695178400" expanded="true" signature="116:2890" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="333:724" ph="/// Region constructor. ... " />
+                <marker date="1548695178400" expanded="true" signature="823:1103" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="1113:1192" ph="/// Build the mesh with the region params. ... " />
+                <marker date="1548695178400" expanded="true" signature="1245:2668" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="1508:2522" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="1568:2512" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="2082:2498" ph="{...}" />
+                <marker date="1548695178400" expanded="true" signature="2751:2888" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -79,76 +69,122 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/NoiseFilter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="115" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
+            <state relative-caret-position="360">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
               <folding>
-                <marker date="1548189015773" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548189015773" expanded="true" signature="104:449" ph="{...}" />
-                <marker date="1548189015773" expanded="true" signature="231:273" ph="{...}" />
-                <marker date="1548189015773" expanded="true" signature="319:447" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/Noise.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="240" selection-start-line="240" selection-end-line="240" />
-              <folding>
-                <marker date="1548189675151" expanded="true" signature="6:32" ph="..." />
-                <marker date="1548189675151" expanded="true" signature="52:6988" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="90:1414" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="1971:2225" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="2246:2280" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="2308:2345" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="2387:5497" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="2872:3482" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="2908:3080" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="3111:3283" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="3300:3472" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="3495:4103" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="3530:3702" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="3732:3904" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="3921:4093" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="4552:4712" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="4782:4957" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="5027:5202" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="5272:5444" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="5528:6145" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="5601:5991" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="5742:5980" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="6004:6139" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="6217:6287" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="6349:6408" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="6460:6508" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="6544:6601" ph="{...}" />
-                <marker date="1548189675151" expanded="true" signature="6669:6985" ph="{...}" />
+                <marker date="1548353646044" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548353646044" expanded="true" signature="80:166" ph="/// Base class of the noise to be applied on each region. ... " />
+                <marker date="1548353646044" expanded="true" signature="191:1265" ph="{...}" />
+                <marker date="1548353646044" expanded="true" signature="276:407" ph="/// Noise filter constructor. ... " />
+                <marker date="1548353646044" expanded="true" signature="454:496" ph="{...}" />
+                <marker date="1548353646044" expanded="true" signature="506:685" ph="/// Give the elevation value of a mesh point. ... " />
+                <marker date="1548353646044" expanded="true" signature="726:1263" ph="{...}" />
+                <marker date="1548353646044" expanded="true" signature="894:1139" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Editor/PlanetEditor.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/ColorSettings.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="114" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
+            <state relative-caret-position="60">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding>
-                <marker date="1548188826900" expanded="true" signature="6:37" ph="..." />
-                <marker date="1548188826900" expanded="true" signature="104:1524" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="215:673" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="282:432" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="358:422" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="482:534" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="793:1442" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="829:1436" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="980:1426" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="1023:1412" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="1194:1394" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="1271:1372" ph="{...}" />
-                <marker date="1548188826900" expanded="true" signature="1471:1517" ph="{...}" />
+                <marker date="1548347486533" expanded="false" signature="6:32" ph="..." />
+                <marker date="1548347486533" expanded="true" signature="75:126" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/NoiseSettingsDrawer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+              <folding>
+                <marker date="1548353646050" expanded="false" signature="6:97" ph="..." />
+                <marker date="1548353646050" expanded="true" signature="194:2161" ph="{...}" />
+                <marker date="1548353646050" expanded="true" signature="329:2159" ph="{...}" />
+                <marker date="1548353646050" expanded="true" signature="1664:2043" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsEditor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" column="103" selection-start-line="19" selection-start-column="103" selection-end-line="19" selection-end-column="103" />
+              <folding>
+                <marker date="1548516308793" expanded="false" signature="6:37" ph="..." />
+                <marker date="1548516308793" expanded="true" signature="120:1059" ph="{...}" />
+                <marker date="1548516308793" expanded="true" signature="276:1056" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/TextureUtils/TextureUtils.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
+              <folding>
+                <marker date="1548512019670" expanded="true" signature="45:665" ph="{...}" />
+                <marker date="1548512019670" expanded="true" signature="148:663" ph="{...}" />
+                <marker date="1548512019670" expanded="true" signature="385:592" ph="{...}" />
+                <marker date="1548512019670" expanded="true" signature="431:582" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorHelpers.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+              <folding>
+                <marker date="1548353646053" expanded="false" signature="6:37" ph="..." />
+                <marker date="1548353646053" expanded="true" signature="78:873" ph="{...}" />
+                <marker date="1548353646053" expanded="true" signature="85:249" ph="/// Draws a in line text header with background color. ... " />
+                <marker date="1548353646053" expanded="true" signature="298:476" ph="{...}" />
+                <marker date="1548353646053" expanded="true" signature="486:673" ph="/// Returns a 1x1 sized and colored texture. ... " />
+                <marker date="1548353646053" expanded="true" signature="733:871" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Altitude.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding>
+                <marker date="1548501753521" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548501753521" expanded="true" signature="101:577" ph="{...}" />
+                <marker date="1548501753521" expanded="true" signature="186:274" ph="{...}" />
+                <marker date="1548501753521" expanded="true" signature="280:384" ph="/// Evaluates a altitude point ... " />
+                <marker date="1548501753521" expanded="true" signature="422:575" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/ColorHeight.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="56" />
+              <folding>
+                <marker date="1548696846198" expanded="true" signature="28:1686" ph="{...}" />
+                <marker date="1548696846198" expanded="true" signature="49:157" ph="{...}" />
+                <marker date="1548696846198" expanded="true" signature="176:1661" ph="{...}" />
+                <marker date="1548696846198" expanded="true" signature="251:1650" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -156,17 +192,32 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>heightPercent = inverseLerp(minHeight, maxHeight, distanceT);</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/TextureUtils/TextureUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorStyling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Altitude.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorHelpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/NoiseSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorStyles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/Noise.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/NoiseSettingsDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/PlanetSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/EditorRotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Editor/PlanetEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/NoiseFilter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/NoiseSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/Noise.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/ColorHeight.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/ColorSettings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,13 +225,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TerrainFace.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Region.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/NoiseSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/PlanetSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditorStyles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/EditorRotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Editor/PlanetEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Noise/NoiseFilter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/PlanetSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/ColorSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/ColorSettingsDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Noise/Noise.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Noise/NoiseFilter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/Styling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/NoiseSettingsDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorHelpers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorStyling.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorStyles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Altitude.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/TextureUtils/TextureUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/ColorHeight.shader" />
       </list>
     </option>
   </component>
@@ -200,13 +265,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -236,10 +301,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16940">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="16940" />
       <method v="2" />
     </configuration>
   </component>
@@ -254,11 +319,14 @@
       <option name="presentableId" value="Default" />
       <updated>1548184232154</updated>
       <workItem from="1548184242306" duration="5437000" />
+      <workItem from="1548338253050" duration="12806000" />
+      <workItem from="1548497607960" duration="19973000" />
+      <workItem from="1548690996863" duration="5635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5437000" />
+    <option name="totallyTimeSpent" value="51480000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -273,38 +341,38 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Captures" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" visible="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unity" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Captures" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49946696" visible="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" visible="true" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
-      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.39978564" />
+      <window_info anchor="bottom" id="NuGet" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Terminal" order="15" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,148 +391,280 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TerrainFace.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TerrainFace.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Region.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditorStyles.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/EditorRotator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Region.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/PlanetSettings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="300">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding>
-            <marker date="1548188390689" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548188390689" expanded="true" signature="190:342" ph="{...}" />
+            <marker date="1548275317711" expanded="true" signature="6:37" ph="..." />
+            <marker date="1548275317711" expanded="true" signature="102:400" ph="{...}" />
+            <marker date="1548275317711" expanded="true" signature="153:215" ph="{...}" />
+            <marker date="1548275317711" expanded="true" signature="243:313" ph="{...}" />
+            <marker date="1548275317711" expanded="true" signature="336:398" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsDrawer.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/ColorSettingsDrawer.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/Noise.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="36" column="178" selection-start-line="36" selection-start-column="178" selection-end-line="36" selection-end-column="178" />
+        <state relative-caret-position="-630">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding>
-            <marker date="1548189066050" expanded="true" signature="55:1424" ph="{...}" />
-            <marker date="1548189066050" expanded="true" signature="396:1285" ph="{...}" />
-            <marker date="1548189066050" expanded="true" signature="464:530" ph="{...}" />
-            <marker date="1548189066050" expanded="true" signature="610:1246" ph="{...}" />
-            <marker date="1548189066050" expanded="true" signature="661:1043" ph="{...}" />
-            <marker date="1548189066050" expanded="true" signature="1310:1422" ph="{...}" />
-            <marker date="1548189066050" expanded="true" signature="1360:1416" ph="{...}" />
+            <marker date="1548353646043" expanded="false" signature="6:32" ph="..." />
+            <marker date="1548353646043" expanded="true" signature="34:109" ph="///  ... " />
+            <marker date="1548353646043" expanded="true" signature="128:7064" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="166:1490" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="2047:2301" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="2322:2356" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="2384:2421" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="2463:5573" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="2948:3558" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="2984:3156" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="3187:3359" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="3376:3548" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="3571:4179" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="3606:3778" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="3808:3980" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="3997:4169" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="4628:4788" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="4858:5033" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="5103:5278" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="5348:5520" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="5604:6221" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="5677:6067" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="5818:6056" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="6080:6215" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="6293:6363" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="6425:6484" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="6536:6584" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="6620:6677" ph="{...}" />
+            <marker date="1548353646043" expanded="true" signature="6745:7061" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Editor/PlanetEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="114" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
+        <state relative-caret-position="495">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
-            <marker date="1548188826900" expanded="true" signature="6:37" ph="..." />
-            <marker date="1548188826900" expanded="true" signature="104:1524" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="215:673" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="282:432" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="358:422" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="482:534" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="793:1442" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="829:1436" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="980:1426" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="1023:1412" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="1194:1394" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="1271:1372" ph="{...}" />
-            <marker date="1548188826900" expanded="true" signature="1471:1517" ph="{...}" />
+            <marker date="1548353646046" expanded="false" signature="6:37" ph="..." />
+            <marker date="1548353646046" expanded="true" signature="104:1745" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="215:1052" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="282:397" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="323:387" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="1154:1626" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="1190:1620" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="1265:1610" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="1420:1596" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="1489:1578" ph="{...}" />
+            <marker date="1548353646046" expanded="true" signature="1655:1738" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/NoiseFilter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorStyles.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="115" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
+        <state relative-caret-position="390">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
-            <marker date="1548189015773" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548189015773" expanded="true" signature="104:449" ph="{...}" />
-            <marker date="1548189015773" expanded="true" signature="231:273" ph="{...}" />
-            <marker date="1548189015773" expanded="true" signature="319:447" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <marker date="1548187714482" expanded="true" signature="39:2030" ph="{...}" />
-            <marker date="1548187714482" expanded="true" signature="342:622" ph="{...}" />
-            <marker date="1548187714482" expanded="true" signature="659:2028" ph="{...}" />
-            <marker date="1548187714482" expanded="true" signature="885:1882" ph="{...}" />
-            <marker date="1548187714482" expanded="true" signature="945:1872" ph="{...}" />
-            <marker date="1548187714482" expanded="true" signature="1442:1858" ph="{...}" />
+            <marker date="1548353646056" expanded="false" signature="6:37" ph="..." />
+            <marker date="1548353646056" expanded="true" signature="39:113" ph="/// Static class to handle Styling structures ... " />
+            <marker date="1548353646056" expanded="true" signature="152:1149" ph="{...}" />
+            <marker date="1548353646056" expanded="true" signature="190:256" ph="{...}" />
+            <marker date="1548353646056" expanded="true" signature="709:774" ph="///  ... " />
+            <marker date="1548353646056" expanded="true" signature="808:1147" ph="{...}" />
+            <marker date="1548353646056" expanded="true" signature="826:1141" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/NoiseSettings.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state>
           <folding>
-            <marker date="1548188374948" expanded="true" signature="6:32" ph="..." />
-            <marker date="1548188374948" expanded="true" signature="75:169" ph="{...}" />
+            <marker date="1548273091832" expanded="false" signature="6:32" ph="..." />
+            <marker date="1548273091832" expanded="true" signature="75:398" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/Noise.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorStyling.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
+        <state relative-caret-position="45">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
           <folding>
-            <marker date="1548189675151" expanded="true" signature="6:32" ph="..." />
-            <marker date="1548189675151" expanded="true" signature="52:6988" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="90:1414" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="1971:2225" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="2246:2280" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="2308:2345" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="2387:5497" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="2872:3482" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="2908:3080" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="3111:3283" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="3300:3472" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="3495:4103" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="3530:3702" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="3732:3904" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="3921:4093" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="4552:4712" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="4782:4957" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="5027:5202" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="5272:5444" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="5528:6145" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="5601:5991" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="5742:5980" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="6004:6139" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="6217:6287" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="6349:6408" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="6460:6508" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="6544:6601" ph="{...}" />
-            <marker date="1548189675151" expanded="true" signature="6669:6985" ph="{...}" />
+            <marker date="1548353646057" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548353646057" expanded="true" signature="80:170" ph="/// Struct that store the main colors to create new stylings. ... " />
+            <marker date="1548353646057" expanded="true" signature="204:544" ph="{...}" />
+            <marker date="1548353646057" expanded="true" signature="303:438" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/PlanetSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <marker date="1548353773576" expanded="false" signature="6:92" ph="..." />
+            <marker date="1548353773576" expanded="true" signature="219:411" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/ColorSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <marker date="1548347486533" expanded="false" signature="6:32" ph="..." />
+            <marker date="1548347486533" expanded="true" signature="75:126" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/NoiseSettingsDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding>
+            <marker date="1548353646050" expanded="false" signature="6:97" ph="..." />
+            <marker date="1548353646050" expanded="true" signature="194:2161" ph="{...}" />
+            <marker date="1548353646050" expanded="true" signature="329:2159" ph="{...}" />
+            <marker date="1548353646050" expanded="true" signature="1664:2043" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Settings/Planet/Editor/PlanetSettingsEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="103" selection-start-line="19" selection-start-column="103" selection-end-line="19" selection-end-column="103" />
+          <folding>
+            <marker date="1548516308793" expanded="false" signature="6:37" ph="..." />
+            <marker date="1548516308793" expanded="true" signature="120:1059" ph="{...}" />
+            <marker date="1548516308793" expanded="true" signature="276:1056" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/TextureUtils/TextureUtils.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+          <folding>
+            <marker date="1548512019670" expanded="true" signature="45:665" ph="{...}" />
+            <marker date="1548512019670" expanded="true" signature="148:663" ph="{...}" />
+            <marker date="1548512019670" expanded="true" signature="385:592" ph="{...}" />
+            <marker date="1548512019670" expanded="true" signature="431:582" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utils/CustomEditor/CustomEditorHelpers.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding>
+            <marker date="1548353646053" expanded="false" signature="6:37" ph="..." />
+            <marker date="1548353646053" expanded="true" signature="78:873" ph="{...}" />
+            <marker date="1548353646053" expanded="true" signature="85:249" ph="/// Draws a in line text header with background color. ... " />
+            <marker date="1548353646053" expanded="true" signature="298:476" ph="{...}" />
+            <marker date="1548353646053" expanded="true" signature="486:673" ph="/// Returns a 1x1 sized and colored texture. ... " />
+            <marker date="1548353646053" expanded="true" signature="733:871" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Noise/NoiseFilter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding>
+            <marker date="1548353646044" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548353646044" expanded="true" signature="80:166" ph="/// Base class of the noise to be applied on each region. ... " />
+            <marker date="1548353646044" expanded="true" signature="191:1265" ph="{...}" />
+            <marker date="1548353646044" expanded="true" signature="276:407" ph="/// Noise filter constructor. ... " />
+            <marker date="1548353646044" expanded="true" signature="454:496" ph="{...}" />
+            <marker date="1548353646044" expanded="true" signature="506:685" ph="/// Give the elevation value of a mesh point. ... " />
+            <marker date="1548353646044" expanded="true" signature="726:1263" ph="{...}" />
+            <marker date="1548353646044" expanded="true" signature="894:1139" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Altitude.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <marker date="1548501753521" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548501753521" expanded="true" signature="101:577" ph="{...}" />
+            <marker date="1548501753521" expanded="true" signature="186:274" ph="{...}" />
+            <marker date="1548501753521" expanded="true" signature="280:384" ph="/// Evaluates a altitude point ... " />
+            <marker date="1548501753521" expanded="true" signature="422:575" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Planet.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding>
+            <marker date="1548695123831" expanded="false" signature="6:32" ph="..." />
+            <marker date="1548695123831" expanded="true" signature="34:102" ph="/// Base class of the planet generator. ... " />
+            <marker date="1548695123831" expanded="true" signature="138:3004" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="428:520" ph="/// Generate the planet with the given planet settings. ... " />
+            <marker date="1548695123831" expanded="true" signature="547:1822" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="615:681" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="761:1783" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="812:1581" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="1828:1912" ph="/// Construct the mesh for each defined region. ... " />
+            <marker date="1548695123831" expanded="true" signature="1936:2704" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="2031:2100" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="2148:2569" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="2758:2804" ph="{...}" />
+            <marker date="1548695123831" expanded="true" signature="2888:3002" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Components/Planet/Region.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+          <folding>
+            <marker date="1548695178400" expanded="true" signature="20:96" ph="/// Base class to construct each planet region. ... " />
+            <marker date="1548695178400" expanded="true" signature="116:2890" ph="{...}" />
+            <marker date="1548695178400" expanded="true" signature="333:724" ph="/// Region constructor. ... " />
+            <marker date="1548695178400" expanded="true" signature="823:1103" ph="{...}" />
+            <marker date="1548695178400" expanded="true" signature="1113:1192" ph="/// Build the mesh with the region params. ... " />
+            <marker date="1548695178400" expanded="true" signature="1245:2668" ph="{...}" />
+            <marker date="1548695178400" expanded="true" signature="1508:2522" ph="{...}" />
+            <marker date="1548695178400" expanded="true" signature="1568:2512" ph="{...}" />
+            <marker date="1548695178400" expanded="true" signature="2082:2498" ph="{...}" />
+            <marker date="1548695178400" expanded="true" signature="2751:2888" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/ColorHeight.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="56" />
+          <folding>
+            <marker date="1548696846198" expanded="true" signature="28:1686" ph="{...}" />
+            <marker date="1548696846198" expanded="true" signature="49:157" ph="{...}" />
+            <marker date="1548696846198" expanded="true" signature="176:1661" ph="{...}" />
+            <marker date="1548696846198" expanded="true" signature="251:1650" ph="{...}" />
           </folding>
         </state>
       </provider>
